@@ -9,4 +9,18 @@ const matches = fs
     return row.split(',');
   });
 
-console.log(matches);
+const homeWin = 'H';
+const awayWin = 'A';
+const draw = 'D';
+
+let manUnitedWins = 0;
+
+for (let match of matches) {
+  if (match[1] === 'Man United' && match[5] === homeWin) {
+    manUnitedWins++;
+  } else if (match[2] === 'Man United' && match[5] === awayWin) {
+    manUnitedWins++;
+  }
+}
+
+console.log(`Man United won ${manUnitedWins} games`);
