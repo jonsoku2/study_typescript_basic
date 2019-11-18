@@ -1,7 +1,4 @@
 import fs from 'fs';
-import { MatchResult } from './MatchResult';
-
-type MatchData = [Date, string, string, number, number, MatchResult, string];
 
 // T <-> TypeOfData
 export abstract class CsvFileReader<T> {
