@@ -14,7 +14,6 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var CsvFileReader_1 = require("./CsvFileReader");
-var utils_1 = require("./utils");
 var MatchReader = /** @class */ (function (_super) {
     __extends(MatchReader, _super);
     function MatchReader() {
@@ -22,7 +21,7 @@ var MatchReader = /** @class */ (function (_super) {
     }
     MatchReader.prototype.mapRow = function (row) {
         return [
-            utils_1.dateStringToDate(row[0]),
+            dateStringToDate(row[0]),
             row[1],
             row[2],
             parseInt(row[3]),

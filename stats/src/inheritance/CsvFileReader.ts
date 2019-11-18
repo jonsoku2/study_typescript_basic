@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { dateStringToDate } from './utils';
 
 // T <-> TypeOfData
 export abstract class CsvFileReader<T> {
